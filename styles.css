@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.column-1 {
+    margin-left: 72px;
+}
+.star-div {
+    background-color: orange;
+    padding: 8px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+}
+#star {
+    height: 30px;
+}
+
+.reviewers{
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    align-items: flex-start;
+}
+.heading-style {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.body-style {
+    font-size: 20px;
+    line-height: 35px;
+    padding-bottom: 20px;
+}
+.list-items {
+    font-size: 14px;
+}
+.checklists {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+.checkmark {
+    display: flex;
+}
+
+
+.column-2 {
+    margin-right: 72px
+}
+
+.testimonial-cards{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.testimonial-card {
+    width: 50%;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+}
+#testimonial-card-1{
+    align-self: flex-end;
+}
+.photos-card-testimonial {
+    display: flex;
+    align-items: center;
+}
+.stars{
+    flex-grow: 1;
+    text-align: center;
+}
+.img-google {
+    width: 90px;
+}
+.img-meta {
+    width: 90px;
+}
+
+.testimonial-card-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding-top: 10px;
+    line-height: 30px;
+}
+@media screen and (max-width: 641px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .grid>section {
+        margin: 0;
+    }
+}
